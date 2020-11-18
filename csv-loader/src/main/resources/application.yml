@@ -1,0 +1,44 @@
+#local, dev, prod 공통 설정
+spring:
+  application:
+    name: CSV Loader 
+  profiles:
+    active: local
+    #active: dev
+    #active: prod
+
+--- #local
+spring:
+  profiles: local
+logging:
+  file: ./log/local
+  level:
+    root: info
+    csv-loader: debug
+csv-loader:
+  path: D:\sts\sts-4.0.1.RELEASE\workspace\csv-loader\datafile
+  file: book_list.csv
+    
+--- #dev
+spring:
+  profiles: dev
+logging:
+  file: ./log/dev
+  level:
+    root: info
+    csv-loader: debug
+csv-loader:
+  path: ./datafile
+  file: book_list.csv
+    
+--- #prod
+spring:
+  profiles: prod
+logging:
+  file: ./log/prod
+  level:
+    root: info
+    csv-loader: debug
+csv-loader:
+  path: ./datafile
+  file: book_list.csv  
