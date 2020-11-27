@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class CsvLoaderServiceImpl implements CsvLoaderService {
-	
+
 	@Autowired
 	private CsvLoaderConfig csvLoaderConfig;
 
@@ -20,7 +20,7 @@ public class CsvLoaderServiceImpl implements CsvLoaderService {
 	public void loader() {
 		String filePath = csvLoaderConfig.getPath() + File.separator + csvLoaderConfig.getFile();
 		log.info("filePath->{}", filePath);
-		
+
 		try {
 			List<Book> books = CSVHelper.csvToBooks(filePath);
 			for (Book book: books) {
@@ -29,8 +29,8 @@ public class CsvLoaderServiceImpl implements CsvLoaderService {
 		} catch (Exception e) {
 			throw new RuntimeException("fail to store csv data: " + e.getMessage());
 		}
-		
-		
+
+
 	}
 
 }

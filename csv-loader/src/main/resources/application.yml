@@ -16,7 +16,7 @@ logging:
     root: info
     csv-loader: debug
 csv-loader:
-  path: D:\sts\sts-4.0.1.RELEASE\workspace\csv-loader\datafile
+  path: D:\git\Java\csv-loader\csv-loader\datafile
   file: book_list.csv
     
 --- #dev
