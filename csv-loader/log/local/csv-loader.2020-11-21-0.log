@@ -1,0 +1,378 @@
+20201121 00:23:37.473 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 7240 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:23:37.474 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:23:37.504 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:23:37.504 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:23:37.504 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:23:37.798 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:23:38.098 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 1.028 seconds (JVM running for 1.708) 
+20201121 00:23:38.099 [main] INFO c.s.CsvLoaderServiceImpl - filePath->D:\sts\sts-4.0.1.RELEASE\workspace\csv-loader\datafile\book_list.csv 
+20201121 00:23:38.102 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:23:38.114 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: D:\sts\sts-4.0.1.RELEASE\workspace\csv-loader\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:25:54.991 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 9284 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:25:54.992 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:25:55.016 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:25:55.016 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:25:55.016 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:25:55.234 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:25:55.465 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.759 seconds (JVM running for 1.202) 
+20201121 00:25:55.466 [main] INFO c.s.CsvLoaderServiceImpl - filePath->.\csv-loader\src\main\resources\book_list.csv 
+20201121 00:25:55.469 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:25:55.478 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: .\csv-loader\src\main\resources\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:26:37.593 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 3976 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:26:37.594 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:26:37.618 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:26:37.618 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:26:37.618 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:26:37.838 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:26:38.071 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.755 seconds (JVM running for 1.144) 
+20201121 00:26:38.072 [main] INFO c.s.CsvLoaderServiceImpl - filePath->.\csv-loader\datafile\book_list.csv 
+20201121 00:26:38.074 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:26:38.083 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: .\csv-loader\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:26:52.304 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 2604 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:26:52.306 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:26:52.329 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:26:52.330 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:26:52.330 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:26:52.554 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:26:52.794 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.798 seconds (JVM running for 1.258) 
+20201121 00:26:52.795 [main] INFO c.s.CsvLoaderServiceImpl - filePath->.\csv-loader\csv-loader\datafile\book_list.csv 
+20201121 00:26:52.797 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:26:52.807 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: .\csv-loader\csv-loader\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:27:11.531 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 17524 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:27:11.533 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:27:11.556 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:27:11.556 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:27:11.556 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:27:11.776 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:27:12.004 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.747 seconds (JVM running for 1.119) 
+20201121 00:27:12.005 [main] INFO c.s.CsvLoaderServiceImpl - filePath->D:\git\JAVA\csv-loader\csv-loader\datafile\book_list.csv 
+20201121 00:27:12.015 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목1, author=작가1, genre=소설) 
+20201121 00:27:12.015 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목2, author=작가2, genre=에세이) 
+20201121 00:27:12.015 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목3, author=작가3, genre=IT) 
+20201121 00:27:21.630 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 3224 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:27:21.631 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:27:21.655 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:27:21.655 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:27:21.655 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:27:21.876 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:27:22.112 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.761 seconds (JVM running for 1.132) 
+20201121 00:27:22.113 [main] INFO c.s.CsvLoaderServiceImpl - filePath->.\csv-loader\csv-loader\datafile\book_list.csv 
+20201121 00:27:22.116 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:27:22.125 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: .\csv-loader\csv-loader\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:27:28.418 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 6512 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:27:28.419 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:27:28.443 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:27:28.443 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:27:28.443 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:27:28.667 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:27:28.900 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.76 seconds (JVM running for 1.126) 
+20201121 00:27:28.901 [main] INFO c.s.CsvLoaderServiceImpl - filePath->..\csv-loader\csv-loader\datafile\book_list.csv 
+20201121 00:27:28.904 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:27:28.913 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: ..\csv-loader\csv-loader\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:27:47.002 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 16284 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:27:47.003 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:27:47.028 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:27:47.028 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:27:47.029 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:27:47.247 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:27:47.478 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.755 seconds (JVM running for 1.131) 
+20201121 00:27:47.479 [main] INFO c.s.CsvLoaderServiceImpl - filePath->./csv-loader/datafile\book_list.csv 
+20201121 00:27:47.482 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:27:47.491 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: .\csv-loader\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:28:04.443 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 5980 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:28:04.444 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:28:04.467 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:28:04.468 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:28:04.468 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:28:04.695 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:28:04.927 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.765 seconds (JVM running for 1.142) 
+20201121 00:28:04.928 [main] INFO c.s.CsvLoaderServiceImpl - filePath->./csv-loader/csv-loader/datafile\book_list.csv 
+20201121 00:28:04.931 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:28:04.940 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: .\csv-loader\csv-loader\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:28:24.334 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 2172 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:28:24.335 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:28:24.359 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:28:24.359 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:28:24.359 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:28:24.578 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:28:24.812 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.756 seconds (JVM running for 1.14) 
+20201121 00:28:24.813 [main] INFO c.s.CsvLoaderServiceImpl - filePath->D:\git\JAVA/csv-loader/csv-loader/datafile\book_list.csv 
+20201121 00:28:24.818 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목1, author=작가1, genre=소설) 
+20201121 00:28:24.819 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목2, author=작가2, genre=에세이) 
+20201121 00:28:24.819 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목3, author=작가3, genre=IT) 
+20201121 00:31:21.117 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 16612 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:31:21.118 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:31:21.142 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:31:21.142 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:31:21.142 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:31:21.366 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:31:21.597 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.762 seconds (JVM running for 1.146) 
+20201121 00:31:21.598 [main] INFO c.s.CsvLoaderServiceImpl - filePath->D:/git/JAVA/csv-loader/csv-loader/datafile\book_list.csv 
+20201121 00:31:21.604 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목1, author=작가1, genre=소설) 
+20201121 00:31:21.604 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목2, author=작가2, genre=에세이) 
+20201121 00:31:21.604 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목3, author=작가3, genre=IT) 
+20201121 00:33:40.980 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 5544 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:33:40.981 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:33:41.004 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:33:41.004 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:33:41.004 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:33:41.221 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:33:41.451 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.749 seconds (JVM running for 1.126) 
+20201121 00:33:41.453 [main] INFO c.s.CsvLoaderServiceImpl - filePath->../datafile\book_list.csv 
+20201121 00:33:41.455 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:33:41.464 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: ..\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:34:33.674 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 15632 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:34:33.676 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:34:33.698 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:34:33.699 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:34:33.699 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:34:33.918 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:34:34.149 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.755 seconds (JVM running for 1.128) 
+20201121 00:34:34.149 [main] INFO c.s.CsvLoaderServiceImpl - filePath->../../../../../datafile\book_list.csv 
+20201121 00:34:34.152 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:34:34.162 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: ..\..\..\..\..\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:34:44.982 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 18428 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:34:44.983 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:34:45.007 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:34:45.007 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:34:45.007 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:34:45.226 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:34:45.461 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.761 seconds (JVM running for 1.132) 
+20201121 00:34:45.462 [main] INFO c.s.CsvLoaderServiceImpl - filePath->../../../../datafile\book_list.csv 
+20201121 00:34:45.465 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:34:45.474 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: ..\..\..\..\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:34:51.260 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 9612 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:34:51.261 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:34:51.285 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:34:51.285 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:34:51.285 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:34:51.501 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:34:51.730 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.75 seconds (JVM running for 1.118) 
+20201121 00:34:51.732 [main] INFO c.s.CsvLoaderServiceImpl - filePath->../../../../../../datafile\book_list.csv 
+20201121 00:34:51.734 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:34:51.743 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:16)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: ..\..\..\..\..\..\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:36:12.021 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 3772 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:36:12.023 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:36:12.046 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:36:12.046 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:36:12.046 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:36:12.264 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:36:12.497 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.769 seconds (JVM running for 1.145) 
+20201121 00:36:12.498 [main] INFO c.s.CsvLoaderServiceImpl - filePath->../../../../../../datafile\book_list.csv 
+20201121 00:36:12.500 [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+20201121 00:36:12.509 [main] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at csvloader.CsvLoaderApplication.main(CsvLoaderApplication.java:19)
+Caused by: java.lang.RuntimeException: fail to store csv data: fail to parse CSV file: ..\..\..\..\..\..\datafile\book_list.csv (지정된 경로를 찾을 수 없습니다)
+	at csvloader.service.CsvLoaderServiceImpl.loader(CsvLoaderServiceImpl.java:30)
+	at csvloader.CsvLoaderApplication.run(CsvLoaderApplication.java:29)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 5 common frames omitted
+20201121 00:36:52.010 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 5840 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:36:52.011 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:36:52.036 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:36:52.036 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:36:52.036 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:36:52.274 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:36:52.522 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.834 seconds (JVM running for 1.295) 
+20201121 00:36:52.523 [main] INFO c.s.CsvLoaderServiceImpl - filePath->./datafile\book_list.csv 
+20201121 00:36:52.529 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목1, author=작가1, genre=소설) 
+20201121 00:36:52.529 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목2, author=작가2, genre=에세이) 
+20201121 00:36:52.529 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목3, author=작가3, genre=IT) 
+20201121 00:37:09.483 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 3256 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:37:09.484 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:37:09.507 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:37:09.507 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:37:09.507 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:37:09.726 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:37:09.954 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.753 seconds (JVM running for 1.132) 
+20201121 00:37:09.955 [main] INFO c.s.CsvLoaderServiceImpl - filePath->./datafile\book_list.csv 
+20201121 00:37:09.961 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목1, author=작가1, genre=소설) 
+20201121 00:37:09.961 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목2, author=작가2, genre=에세이) 
+20201121 00:37:09.961 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목3, author=작가3, genre=IT) 
+20201121 00:41:39.767 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 8464 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201121 00:41:39.768 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201121 00:41:39.792 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201121 00:41:39.792 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201121 00:41:39.792 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201121 00:41:40.012 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201121 00:41:40.243 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.765 seconds (JVM running for 1.206) 
+20201121 00:41:40.245 [main] INFO c.s.CsvLoaderServiceImpl - filePath->./datafile\book_list.csv 
+20201121 00:41:40.250 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목1, author=작가1, genre=소설) 
+20201121 00:41:40.250 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목2, author=작가2, genre=에세이) 
+20201121 00:41:40.250 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목3, author=작가3, genre=IT) 

@@ -1,0 +1,11 @@
+20201128 01:24:00.628 [main] INFO c.CsvLoaderApplication - Starting CsvLoaderApplication using Java 15.0.1 on MSI_GF63_8RD with PID 14164 (D:\git\JAVA\csv-loader\csv-loader\target\classes started by YOO in D:\git\JAVA\csv-loader\csv-loader) 
+20201128 01:24:00.630 [main] INFO c.CsvLoaderApplication - The following profiles are active: local 
+20201128 01:24:00.653 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 36:13] 
+20201128 01:24:00.654 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 24:13] 
+20201128 01:24:00.656 [main] WARN o.s.b.c.c.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13] 
+20201128 01:24:00.879 [main] WARN o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[csvloader]' package. Please check your configuration. 
+20201128 01:24:01.127 [main] INFO c.CsvLoaderApplication - Started CsvLoaderApplication in 0.823 seconds (JVM running for 1.335) 
+20201128 01:24:01.128 [main] INFO c.s.CsvLoaderServiceImpl - filePath->./datafile\book_list.csv 
+20201128 01:24:01.138 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목1, author=작가1, genre=소설) 
+20201128 01:24:01.138 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목2, author=작가2, genre=에세이) 
+20201128 01:24:01.138 [main] INFO c.s.CsvLoaderServiceImpl - Book(title=책제목3, author=작가3, genre=IT) 

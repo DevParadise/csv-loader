@@ -1,5 +1,6 @@
 package csvloader;
 
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,9 +11,11 @@ import csvloader.service.CsvLoaderServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
+@Slf4j
 public class CsvLoaderApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
+		//System.out.println(new File(".").getAbsolutePath());
 		SpringApplication.run(CsvLoaderApplication.class, args);
 	}
 	
