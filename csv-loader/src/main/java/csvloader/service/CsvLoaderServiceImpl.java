@@ -13,12 +13,22 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CsvLoaderServiceImpl implements CsvLoaderService {
 
+	final static String rootPath = System.getProperty("user.dir");
+	
 	@Autowired
 	private CsvLoaderConfig csvLoaderConfig;
 
 	@Override
 	public void loader() {
-		String filePath = csvLoaderConfig.getPath() + File.separator + csvLoaderConfig.getFile();
+		String filePath = rootPath + File.separator + csvLoaderConfig.getPath() 
+							+ File.separator + csvLoaderConfig.getFile();
+		if (File.separator.equals("\\")) {
+			filePath = filePath.replace("/", File.separator);
+		}
+		else if (File.separator.equals("/")) {
+			filePath = filePath.replace("\\", File.separator);
+		}
+		System.out.println(filePath);		
 		log.info("filePath->{}", filePath);
 
 		try {
