@@ -11,8 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class CsvLoaderConfig {
-	
+
 	private String path;
 	private String file;
-	
 }

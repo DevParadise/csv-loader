@@ -28,7 +28,7 @@ public class CSVHelper {
 			) {
 			List<Book> books = new ArrayList<Book>();
 			Iterable<CSVRecord> csvRecords = csvParser.getRecords();
-			
+
 			for (CSVRecord csvRecord : csvRecords) {
 				Book book = Book.builder()
 						.title(csvRecord.get("Title"))
@@ -37,7 +37,7 @@ public class CSVHelper {
 						.build();
 				books.add(book);
 			}
-			
+
 			return books;
 		} catch (IOException e) {
 			throw new RuntimeException("fail to parse CSV file: " + e.getMessage());
